@@ -289,3 +289,8 @@ For example, the actions following this condition will only be executed for even
 ```
 
 {% endraw %}
+
+## Caveats
+
+Calendar event changes are polled and updated every 15 minutes. Currently, this value cannot be changed. Furthermore, calling homeassistant.update_entity will not poll for changes.
+
